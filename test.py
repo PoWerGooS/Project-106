@@ -14,7 +14,7 @@ def getDataSource(dataPath):
     for row in csvReader:
       Coffee.append(float(row("Coffee")))
       Sleep.append(float(row("Sleep")))
-  return{"x":Coffee, 'y':Sleep}
+  retur["x":Coffee, 'y':Sleep]
 def findCorrelation(DataSource):
   correlation = np.corrcoef(DataSource["x"], DataSource["y"])
   print(correlation)
